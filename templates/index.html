@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="sex">Sex (0 for female, 1 for male):</label>
+        <input type="number" id="sex" name="sex" required><br><br>
+
+        <label for="cp">Chest Pain Type (0-3):</label>
+        <input type="number" id="cp" name="cp" required><br><br>
+
+        <label for="trestbps">Resting Blood Pressure:</label>
+        <input type="number" id="trestbps" name="trestbps" required><br><br>
+
+        <label for="chol">Cholesterol:</label>
+        <input type="number" id="chol" name="chol" required><br><br>
+
+        <label for="fbs">Fasting Blood Sugar (0 for false, 1 for true):</label>
+        <input type="number" id="fbs" name="fbs" required><br><br>
+
+        <label for="restecg">Resting ECG (0-2):</label>
+        <input type="number" id="restecg" name="restecg" required><br><br>
+
+        <label for="thalach">Maximum Heart Rate Achieved:</label>
+        <input type="number" id="thalach" name="thalach" required><br><br>
+
+        <label for="exang">Exercise Induced Angina (0 for no, 1 for yes):</label>
+        <input type="number" id="exang" name="exang" required><br><br>
+
+        <label for="oldpeak">ST Depression Induced by Exercise:</label>
+        <input type="number" id="oldpeak" name="oldpeak" required><br><br>
+
+        <label for="slope">Slope of the Peak Exercise ST Segment (0-2):</label>
+        <input type="number" id="slope" name="slope" required><br><br>
+
+        <label for="ca">Number of Major Vessels (0-3):</label>
+        <input type="number" id="ca" name="ca" required><br><br>
+
+        <label for="thal">Thalassemia (0-3):</label>
+        <input type="number" id="thal" name="thal" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+    <p>{{ prediction_text }}</p> 
+</body>
+</html>
